@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/5412-font.ttf') format('woff2'),
+       url('/5412-font.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'MyCustomFont', sans-serif;
+}
+.idea{
+ color: rgb(41, 19, 120);
+
+}
+#money {
+  background-color: aquamarine;
+}
+a:visited {
+  color: #00FF00;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.user_header_image {
+  width: 100%;
+  height: 250px;
+  text-align: center;
+}
+.header, .footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.main {
+  flex: 1;
+  display: flex;
+}
+.left, .right {
+  width: 20%; 
+  padding: 15px;
+}
+.content {
+  flex: 1; 
+  padding: 15px;
+}
+@media (max-width: 600px) {
+  .main {
+      flex-direction: column;
+  }
+  .left, .right {
+      width: 100%;
+  }
+}
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+}
+p {
+  text-align: center;
+  margin-block-end: 10px;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+a {
+  font-size: 10px;
+}
+img {
+  size: 30px;
+}
+table {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+  font-size: 14px;
+  border-radius: 10px;
+  border-spacing: 0;
+  text-align: center;
+  width: 100%;
+  }
+  th {
+    text-align: left;
+    color: #fff;
+    background-color: #706d97;
+}
+td {
+    min-width: 250px;
+    color: #696969;
+    border-bottom: 1px solid #eee;
+}
+th, td {
+    padding: 10px;
+    height: 20px;
+}
+td:first-child {
+    width: 150px;
+    min-width: 0;
+}
+th:last-child {
+    text-align: right;
+}
+td:last-child {
+    width: 80px;
+    min-width: 0;
+    text-align: right;
+}
+tr:nth-child(odd) {
+    background-color: #eee;
+}
